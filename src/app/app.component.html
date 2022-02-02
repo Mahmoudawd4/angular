@@ -1,0 +1,16 @@
+    <!-- header -->
+    <div class="header">
+
+        <app-top-nav></app-top-nav>
+         <!-- <app-mid-nav  [addProductTocart]="addproducts" (itemdel)="onItemdel($event)" ></app-mid-nav> --> -->
+         <app-mid-nav   (itemdel)="onItemdel($event)" ></app-mid-nav> 
+         <!-- <app-mid-nav   ></app-mid-nav>  -->
+
+
+        <app-low-nav></app-low-nav>
+    
+    
+    </div>
+
+<!-- <app-products-items (onItemaddFromContainer)="onItemAdd($event)"  ></app-products-items> -->
+<router-outlet ></router-outlet>

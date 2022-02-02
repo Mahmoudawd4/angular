@@ -1,0 +1,12 @@
+
+<!-- <app-product-item (itemAdd)="onitemAdd($event)"  *ngFor="let item of productsArray" [product]="item" class="item-medium-1"></app-product-item> -->
+
+
+
+
+<app-product-item (itemAdd)="onitemAdd($event)"  *ngFor="let item of (productArray$ | async)?.product ; let hammda = index  "  [product]="item" class="item-medium-1"></app-product-item>
+
+<!-- <app-product-item  *ngFor="let item of (productArray$ | async)?.product ; let hammda = index  "  [product]="item" class="item-medium-1"></app-product-item> -->
+
+
+<!-- *ngFor="let item of (productArray$ | async)?.product ; let hammda = index" [productItem]="item"  -->

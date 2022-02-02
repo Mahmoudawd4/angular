@@ -1,0 +1,3 @@
+
+
+    productService.getAll().subscribe(a => this.products = a); //error on this.products: 
